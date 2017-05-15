@@ -1,7 +1,5 @@
-Notes for php/hack/hhvm
+# Notes for php/hack/hhvm
 
-
-Useful links
 *hhvm* documentation: https://docs.hhvm.com/hhvm/getting-started/getting-started
 
 *hack* documentation: https://docs.hhvm.com/hack/getting-started/getting-started
