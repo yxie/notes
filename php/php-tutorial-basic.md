@@ -32,7 +32,9 @@
      ?>
      ```
 
-## Variable and constant
+
+
+# Variable and Constant
 
 1. Variable: 
 
@@ -60,7 +62,9 @@
 
    Magic constants: `__LINE__`, `__FILE__`, ...
 
-## Control Flow
+
+
+# Control Flow
 
 similar to c++
 
@@ -96,7 +100,9 @@ similar to c++
 
 * break/continue
 
-## Array
+
+
+# Array
 
 An array is a data structure that stores one **or more** similar type of values in a single value. 
 
@@ -135,6 +141,8 @@ $marks = array(
 );
 echo $marks['mohammad']['physics'] . "<br />"; 
 ```
+
+
 
 # String
 
@@ -175,24 +183,26 @@ echo $marks['mohammad']['physics'] . "<br />";
      * return `FALSE` if not found
      * return `index` of first character if found
 
-# Web concept
+
+
+# Web Concept
 
 This session demonstrates how PHP can provide dynamic content according to browser type, randomly generated numbers or User Input. It also demonstrated how the client browser can be redirected.
 
-1. Browser and platform: **HTTP_USER_AGENT** which identifies the user's browser and operating system.
+1. **Browser and platform**: `HTTP_USER_AGENT` which identifies the user's browser and operating system.
 
    `$_SERVER['HTTP_USER_AGENT']`
 
    will output `Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0`
 
-2. Random function: **rand()** function is used to generate a random number.  **srand()** function that specifies the seed number as its argument.
+2. **Random function**: `rand()` function is used to generate a random number.  `srand()` function that specifies the seed number as its argument.
 
    ```php
    srand( microtime() * 1000000 );
    $num = rand( 1, 4 );
    ```
 
-3. HTML Forms: any form element in an HTML page will automatically be available to your PHP scripts.
+3. **HTML Forms**: any form element in an HTML page will automatically be available to your PHP scripts.
 
    ```php
    <?php
@@ -224,7 +234,7 @@ This session demonstrates how PHP can provide dynamic content according to brows
    * The `method = "POST"` is used to post user data to the server script. There are two methods of posting data to the server script which are discussed in [PHP GET & POST](https://www.tutorialspoint.com/php/php_get_post.htm) chapter.
    * After calling this function the `exit()` function can be used to halt parsing of  rest of the code.
 
-4. Browser redirection: The PHP **header()** function supplies raw HTTP headers to the browser and can be used to redirect it to another location.
+4. **Browser redirection**: The PHP `header()` function supplies raw HTTP headers to the browser and can be used to redirect it to another location.
 
    ```php
    <?php
@@ -258,6 +268,8 @@ This session demonstrates how PHP can provide dynamic content according to brows
       </body>
    </html>
    ```
+
+
 
 # GET and POST
 
@@ -294,7 +306,9 @@ The `POST` method transfers information via `HTTP headers`. The information is e
 
 The PHP `$_REQUEST` variable contains the contents of both `$_GET`, `$_POST`, and `$_COOKIE`. We will discuss `$_COOKIE` variable when we will explain about cookies.
 
-# File inclusion
+
+
+# File Inclusion
 
 You can include the content of a PHP file into another PHP file before the server executes it. There are two PHP functions which can be used to included one PHP file into another PHP file.
 
@@ -305,4 +319,113 @@ You can include the content of a PHP file into another PHP file before the serve
 - The `require()` Function: takes all the text in a specified file and copies it into the file that uses the include function. If there is any problem in loading a file then the `require()` function generates a **fatal error** and halt the execution of the script.
 
   `<?php require("xxmenu.php"); ?>`
+
+
+
+# File I/O
+
+`fopen()`, `filesize()`, `fread()`, `fwrite()`, `fclose()`
+
+### Reading a file
+
+```php
+<?php
+	$filename = "tmp.txt";
+	$file = fopen( $filename, "r" );
+         
+	if( $file == false ) {
+		echo ( "Error in opening file" );
+		exit();
+	}
+
+	$filesize = filesize( $filename );
+	$filetext = fread( $file, $filesize );
+	fclose( $file );
+         
+	echo ( "File size : $filesize bytes" );
+	echo ( "<pre>$filetext</pre>" );
+?>
+```
+
+### Writing a file
+
+```php
+<?php
+   $filename = "/home/user/guest/newfile.txt";
+   $file = fopen( $filename, "w" );
+   
+   if( $file == false ) {
+      echo ( "Error in opening new file" );
+      exit();
+   }
+   fwrite( $file, "This is  a simple test\n" );
+   fclose( $file );
+?>
+```
+
+
+
+# Functions
+
+### `function` keyword
+
+```php
+//c++
+void writeMessage() {
+  cout << "..." << endl;
+}
+
+//python
+def writeMessage() {
+  print("...");
+}
+
+//php
+<?php
+	/* Defining a PHP Function */
+	function writeMessage() {
+		echo "You are really a nice person, Have a nice time!";
+	}
+	/* Calling a PHP Function */
+	writeMessage();
+?>
+```
+
+### Examples:
+
+```php
+<?php
+  	//pass by value
+	function addFive($num) {
+		$num += 5;
+	}    
+    //You can pass an argument by reference by adding an ampersand & 
+	//to the variable name in either the function call or the function definition.
+	function addSix(&$num) {
+		$num += 6;
+	}    
+	$orignum = 10;
+	addFive( $orignum ); //$orignum = 10;
+    addSix( $orignum ); //$orignum = 16;
+
+	//return values
+	function addFunction($num1, $num2) {
+		$sum = $num1 + $num2;
+		return $sum;
+	}
+	$return_value = addFunction(10, 20);
+
+	//default parameter values
+    function printMe($param = NULL) {
+		print $param;
+	}
+
+	//dynamic function calls
+	function sayHello() {
+    	echo "Hello<br />";
+    }
+    $function_holder = "sayHello";
+    $function_holder();
+?>
+```
 
