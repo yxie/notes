@@ -34,15 +34,16 @@
 
 
 
+
 # Variable and Constant
 
-1. Variable: 
+1. **Variable**: 
 
    * all variables in PHP are denoted with a leading dollar sign `$`.
    * declare a variable to be global by placing the keyword `GLOBAL` in front of the variable name.
    * declare a variable to be static simply by placing the keyword `STATIC` in front of the variable name.
 
-2. Constant: a name or an identifier for a simple value.
+2. **Constant**: a name or an identifier for a simple value.
 
    ```php
    <?php
@@ -53,7 +54,7 @@
    ?>
    ```
 
-   Difference between *constant* and *variable*:
+3. **Difference between constant and variable**:
 
    - There is no need to write a dollar sign `$` before a constant, where as in Variable one has to write a dollar sign.
    - Constants cannot be defined by simple assignment, they may only be defined using the define() function.
@@ -64,9 +65,10 @@
 
 
 
+
 # Control Flow
 
-similar to c++
+Similar to c++
 
 * if/elseif/else
 
@@ -99,6 +101,7 @@ similar to c++
   ```
 
 * break/continue
+
 
 
 
@@ -146,7 +149,9 @@ echo $marks['mohammad']['physics'] . "<br />";
 
 # String
 
-1. - `Singly quoted strings` are treated almost literally
+1. Format
+
+   - `Singly quoted strings` are treated almost literally
 
    - `doubly quoted strings` replace variables with their values as well as specially interpreting certain character sequences.
 
@@ -182,6 +187,7 @@ echo $marks['mohammad']['physics'] . "<br />";
    * search: `echo strpos("Hello world!","world");` 
      * return `FALSE` if not found
      * return `index` of first character if found
+
 
 
 
@@ -234,7 +240,7 @@ This session demonstrates how PHP can provide dynamic content according to brows
    * The `method = "POST"` is used to post user data to the server script. There are two methods of posting data to the server script which are discussed in [PHP GET & POST](https://www.tutorialspoint.com/php/php_get_post.htm) chapter.
    * After calling this function the `exit()` function can be used to halt parsing of  rest of the code.
 
-4. **Browser redirection**: The PHP `header()` function supplies raw HTTP headers to the browser and can be used to redirect it to another location.
+4. **Browser redirection**: The PHP `header()` function supplies raw HTTP headers to the browser and can be used to redirect it to another location.Escaping to PHP
 
    ```php
    <?php
@@ -268,6 +274,7 @@ This session demonstrates how PHP can provide dynamic content according to brows
       </body>
    </html>
    ```
+
 
 
 
@@ -319,6 +326,7 @@ You can include the content of a PHP file into another PHP file before the serve
 - The `require()` Function: takes all the text in a specified file and copies it into the file that uses the include function. If there is any problem in loading a file then the `require()` function generates a **fatal error** and halt the execution of the script.
 
   `<?php require("xxmenu.php"); ?>`
+
 
 
 
