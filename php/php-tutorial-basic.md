@@ -424,7 +424,7 @@ def writeMessage() {
 	$return_value = addFunction(10, 20);
 
 	//default parameter values
-    function printMe($param = NULL) {
+	function printMe($param = NULL) {
 		print $param;
 	}
 
