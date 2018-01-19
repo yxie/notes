@@ -24,3 +24,18 @@ print("." * 10)
 formatter = "%r %r %r %r"
 print(formatter % (1, 2, 3, 4))
 print(formatter % ('one', 'two', 'three', 'four'))
+
+# more printing
+days = "Mon Tue Wed Thu Fri Sat Sun"
+months = "Jan\nFeb\nMar\n"
+print("Days:", days)
+print("Months:", months)
+
+print("""
+Long sentence. Long sentence.
+Long sentence. Long sentence.
+""")
+
+# escape sequence
+# \n
+# \' \"
