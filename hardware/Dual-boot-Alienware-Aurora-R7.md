@@ -48,3 +48,13 @@ sudo apt-get update && sudo apt-getinstall nvidia-384 nvidia-settings
  
 
 # 8. Install GPU back to the computer
+
+# References
+
+https://www.dell.com/support/article/us/en/19/sln301754/how-to-install-ubuntu-and-windows-8-or-10-as-a-dual-boot-on-your-dell-pc?lang=en#step13
+
+https://zhuanlan.zhihu.com/p/32185946
+
+http://helloworldproject.blogspot.com/2016/11/installing-ubuntu-1610-on-alienware.html
+
+http://topics-cdn.dell.com/pdf/alienware-aurora-r7-desktop_specifications_en-us.pdf
