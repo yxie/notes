@@ -1,3 +1,12 @@
+# Basic
+Keep ubuntu up-to-date
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install build-essential cmake g++ gfortran git vim pkg-config python-dev software-properties-common wget
+sudo apt-get autoremove
+```
+
 # Cuda
 Download: https://developer.nvidia.com/cuda-downloads
 
@@ -50,9 +59,43 @@ Test your installation: `conda list`
 # Tensorflow
 Download: https://pypi.python.org/pypi/tensorflow
 
+Install guide (official): https://www.tensorflow.org/install/install_linux
+
 Install through anaconda:
 ```
 conda create -n tensorflow python=2.7
 source activate tensorflow
 pip install tensorflow-<version>.whl
 ```
+
+Test your installation:
+```
+source activate tensorflow
+python
+>>> import tensorflow
+>>>
+```
+
+# Pytorch
+Create new conda environment:
+```
+conda create -n pytorch python=2.7
+source activate pytorch
+```
+Check official website to get installation command:
+```
+conda install pytorch torchvision cuda90 -c pytorch
+```
+Test your installation:
+```
+source activate Pytorch
+python
+>>> import torch
+>>> torch.cuda.is_available()
+True
+```
+
+# Reference
+[Learning AI if You Suck at Math — P3 — Building an AI Dream Machine or Budget Friendly Special](https://hackernoon.com/learning-ai-if-you-suck-at-math-p3-building-an-ai-dream-machine-or-budget-friendly-special-d5a3023140ef)
+
+[从零开始配置你的深度学习服务器+踩坑经验](https://zhuanlan.zhihu.com/p/32185946)
