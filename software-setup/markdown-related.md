@@ -3,7 +3,7 @@ Use pandoc to generate pdf from markdown
 pandoc --filter pandoc-citeproc --bibliography=ref.bib --csl=ieee.csl --metadata link-citations -N review.md -o review.pdf
 ```
 
-* Enable citation, read bib file, use iee.csl style, enable hyperlink for citations: `--filter pandoc-citeproc  --bibliography=ref.bib  --csl=ieee.csl --metadata link-citations`
+* Enable citation, read bib file, use ieee.csl style, enable hyperlink for citations: `--filter pandoc-citeproc  --bibliography=ref.bib  --csl=ieee.csl --metadata link-citations`
 * Numbered heading: `-N`
 * Source file: `review.md`
 * Output file: `-o review.pdf`
