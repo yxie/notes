@@ -11,6 +11,6 @@ pandoc --filter pandoc-citeproc --bibliography=ref.bib --csl=ieee.csl --metadata
 
 Dependencies:
 * pdflatex: `sudo apt-get install texlive-ful`
-* [ieee.cls file](./assets/ieee.csl)
+* [ieee.csl file](./assets/ieee.csl)
 
 Note: pandoc use 4 spaces or tab to indent list/sublist
