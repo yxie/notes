@@ -101,8 +101,12 @@ True
 Install guide (official): https://github.com/tensorflow/cleverhans
 * use pip
     `pip install -e git+https://github.com/tensorflow/cleverhans.git#egg=cleverhans`
+
 * add python PATH, change "/path/to/cleverhans" to the installed directory
-    `export PYTHONPATH="/path/to/cleverhans":$PYTHONPATH`
+
+  Add this line `export PYTHONPATH="/path/to/cleverhans":$PYTHONPATH` to file `~/.bashrc`
+
+  Run `source ~/.bashrc`
 
 
 # Reference
