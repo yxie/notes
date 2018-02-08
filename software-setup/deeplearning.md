@@ -95,6 +95,16 @@ python
 True
 ```
 
+# CleverHans
+[CleverhHans](https://github.com/tensorflow/cleverhans) is a Python library to benchmark machine learning systems' vulnerability to [adversarial examples](http://karpathy.github.io/2015/03/30/breaking-convnets/). You can learn more about such vulnerabilities on the accompanying [blog](http://cleverhans.io).
+
+Install guide (official): https://github.com/tensorflow/cleverhans
+* use pip
+    `pip install -e git+https://github.com/tensorflow/cleverhans.git#egg=cleverhans`
+* add python PATH, change "/path/to/cleverhans" to the installed directory
+    `export PYTHONPATH="/path/to/cleverhans":$PYTHONPATH`
+
+
 # Reference
 [Learning AI if You Suck at Math — P3 — Building an AI Dream Machine or Budget Friendly Special](https://hackernoon.com/learning-ai-if-you-suck-at-math-p3-building-an-ai-dream-machine-or-budget-friendly-special-d5a3023140ef)
 
