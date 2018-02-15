@@ -18,8 +18,8 @@ Install guide (official): https://docs.nvidia.com/cuda/cuda-installation-guide-l
 Add CUDA to enviroment variables:
 * Add the following lines to file `~/.bashrc`
 ```
-export PATH=/usr/local/cuda-9.1/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-9.1/lib64 ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64 ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 * Run `source ~/.bashrc`
 
@@ -57,7 +57,7 @@ Install guide (official)): https://conda.io/docs/user-guide/install/linux.html
 Test your installation: `conda list`
 
 # Tensorflow
-Download: https://pypi.python.org/pypi/tensorflow
+
 
 Install guide (official): https://www.tensorflow.org/install/install_linux
 
@@ -65,8 +65,14 @@ Install through anaconda:
 ```
 conda create -n tensorflow python=2.7
 source activate tensorflow
-pip install tensorflow-<version>.whl
+pip install pip install --ignore-installed --upgrade <tfBinaryURL>
 ```
+
+Select the tfBinaryURL based on Python version and GPU support:
+```
+https://www.tensorflow.org/versions/master/install/install_linux#the_url_of_the_tensorflow_python_package
+```
+
 
 Test your installation:
 ```
