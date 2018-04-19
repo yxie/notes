@@ -76,9 +76,9 @@ Checkout another branch
 
 `git checkout <branch_name>`
 
-merges all the specified branches into the currently checked out branch, 
+merges all the specified branches into the currently checked out branch,
 
-`git merge <branch1> <branch2>...` 
+`git merge <branch1> <branch2>...`
 
 Show changes introduced by a commit when compared with its parent
 
@@ -107,3 +107,22 @@ Push changes to remote
 Pull changes from Github to local repo
 
 `git pull`
+
+# Keep a fork up-to-date
+
+1. Clone your fork:
+```
+git clone git@github.com:YOUR-USERNAME/YOUR-FORKED-REPO.git
+```
+
+2. Add remote from original repository in your forked repository:
+```
+cd into/cloned/fork-repo
+git remote add upstream git://github.com/ORIGINAL-DEV-USERNAME/REPO-YOU-FORKED-FROM.git
+git fetch upstream
+```
+
+3. Updating your fork from original repo to keep up with their changes:
+```
+git pull upstream master
+```
