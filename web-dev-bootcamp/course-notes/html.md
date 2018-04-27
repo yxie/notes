@@ -44,16 +44,16 @@
   * `<div>`: block-level generic container to group things together, can be styled later
   * `<span>`: in-line generic container
 
-HTML attribute reference
+## HTML attribute reference
 
-Attributes:
+## Attributes:
 ```html
 <tag name="value"></tag>
 ```
 * Image: <img src="corgi.png">, a self closing tag
 * Link: <a href="url">Link text</a>
 
-Table:
+## Table:
 * row <tr>
 * cell <td>
 * heading cell <th>
@@ -75,7 +75,7 @@ Table:
 </table>
 ```
 
-Form:
+## Form:
 * action: the URL to send form data to
 * method: the type of HTTP request
 * work with Back End JS
