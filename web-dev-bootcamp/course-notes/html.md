@@ -1,31 +1,31 @@
-Concepts:
+## Concepts:
 * Closing and self closing tags
 * Tags with attributes
 * MDN
 
-HTML Tags:
+## HTML Tags:
 ```html
 <tagName> Content </tagName>
 ```
 
-Important resource: MDN (Mozilla Developer Network)
+## Important resource: MDN (Mozilla Developer Network)
 * Tutorial
 * Demo
 * Reference
 
-First HTML Page:
+## First HTML Page:
 * In atom, type `html` and then hit `tab`, will generate a template
-* <head>: metadata, general info
-* <body>: content
+* `<head>`: metadata, general info
+* `<body>`: content
 * Comment a sentence: `Ctrl + /`
 
-HTML element reference
+## HTML element reference
 
-Some tags:
-* Heading: <h1>, <h2>, ..., <h6>
-* Paragraph: <p>
-* Bold: <b>, <strong>
-* Italic: <i>, <em>
+## Some tags:
+* Heading: `<h1>, <h2>, ..., <h6>`
+* Paragraph: `<p>`
+* Bold: `<b>, <strong>`
+* Italic: `<i>, <em>`
 * List:
   * Orderd list:
   ```
@@ -41,8 +41,8 @@ Some tags:
   ```
   * Nested list
 * Division element: <div> and <span>, useful for styling elements CSS
-  * <div>: block-level generic container to group things together, can be styled later
-  * <span>: in-line generic container
+  * `<div>`: block-level generic container to group things together, can be styled later
+  * `<span>`: in-line generic container
 
 HTML attribute reference
 
@@ -57,7 +57,7 @@ Table:
 * row <tr>
 * cell <td>
 * heading cell <th>
-* <thead>, <tbody>
+* `<thead>, <tbody>`
 ```html
 <table border="1">
   <tr>
