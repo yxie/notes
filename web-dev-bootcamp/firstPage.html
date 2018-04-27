@@ -1,9 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
+	<head>
+		<!-- metadata goes in head -->
+		<meta charset="utf-8">
+		<title>My First Page</title>
+	</head>
+	<body>
+		<!-- content goes in the body -->
+		<h1>This is my first page</h1> <!--h1 is block level element -->
+		<h2>This is another heading</h2>
+		<p>This is some <b>random</b> text.</p> <!--b is inline element-->
+		<ol>
+			<li>Red</li>
+			<li>Blue</li>
+			<li>Green
+				<ul>
+					<li>Text1</li>
+					<li>Text2</li>
+				</ul>
+			</li>
+		</ol>
 
-</body>
+		<!-- link -->
+		<a href="http://www.google.com">Go to google.com</a>
+
+		<!-- table -->
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Color1</th>
+					<th>Color2</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr> <!-- row -->
+					<td>Red</td> <!-- cell -->
+					<td>Orange</td>
+				</tr>
+				<tr> <!-- row -->
+					<td>Green</td>
+					<td>Yellow</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- form -->
+		<form> <!--By default, action is the same page, method is get-->
+		  <!-- All out inputs will go in here -->
+		  <label for="">
+				Username:
+				<input type="text" name="username" placeholder="username" required>
+			</label>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password"
+				placeholder="password" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="email" required>
+
+			<input type="submit">
+			<!-- <input type="radio">
+			<input type="color">
+			<button type="button" name="button">button</button> -->
+		</form>
+
+		<!-- form select (dropdown)/radio/checkbox -->
+		<form>
+			<p>Do you like cats or dogs?</p>
+			<label for="dogs">Dogs</label>
+		  <input id="dogs" type="radio" name="petChoice" value="DOGS">
+
+			<label for="cats">Cats</label>
+			<input id="cats" type="radio" name="petChoice" value="CATS">
+
+			<p>What's your favorite color?</p>
+			<select name="color">
+				<option value="r">Red</option>
+				<option value="b">Blue</option>
+				<option value="g">Green</option>
+			</select>
+
+			<!--button in the end, equivalent to submit-->
+			<button>Go!</button>
+		</form>
+
+		<!-- form textarea -->
+		<form>
+			<textarea name="Comment" rows="8" cols="80"></textarea>
+			<button>Submit comment!</button>
+		</form>
+	</body>
 </html>
