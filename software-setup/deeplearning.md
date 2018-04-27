@@ -82,6 +82,11 @@ python
 >>>
 ```
 
+Upgrade tensorflow
+```
+pip install --upgrade <tfBinaryURL>
+```
+
 # Pytorch
 Create new conda environment:
 ```
