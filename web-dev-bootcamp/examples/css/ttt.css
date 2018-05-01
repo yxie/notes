@@ -1,0 +1,27 @@
+h1 {
+  margin: auto;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+}
+
+.lr {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.tb {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.all {
+  border: 1px solid black;
+}
