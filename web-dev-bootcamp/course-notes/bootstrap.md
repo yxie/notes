@@ -33,12 +33,43 @@ crossorigin="anonymous"></script>
 * form
   * form-group
   * form-control
-* navbar
+* nav navbar
   * navbar-header
   * nav navbar-nav navbar-right
   * collapse navbar-collapse
   * navbar-toggle collapsed
+  * navbar-fixed-top
 
 ## Grid system
 * 12 columns
 * container -> row -> col-lg-, col-md-, col-sm-, col-xs-
+
+## Images
+* Free images: www.unplash.com
+* thumbnail, for shaping images
+* background-image:
+  ```css
+  body {
+    background-image: url("https://images.unsplash.com/photo-1507150823660-eed1895c23c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=016b833109416ed8f1d16c6baf887b25&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover; /*auto resize the background image*/
+    background-position: center; /*auto center the background image*/
+  }
+  html {
+    height: 100%; /*make background image always full screen*/
+  }
+  ```
+
+## Icons
+* https://getbootstrap.com/docs/3.3/components/
+* Bootstrap icons: glyphicon
+* More icons: Font-awesome
+  * CDN:
+  ```
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  ```
+
+## Mobile
+Make website work for mobile. Add the following in `<head>` before `<title>`
+```
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
