@@ -36,13 +36,13 @@
   // return an JS object
   // use document.dir(tag) to see the returned object
   ```
-* `getElementByClassName`: takes a string argument and returns a list of elements that have a matching class
+* `getElementsByClassName`: takes a string argument and returns a list of elements that have a matching class
   ```javascript
   var tags = document.getElementByClassName("bolded");
   // return array-like object, not array
   // lack some array methods, such as forEach()
   ```
-* `getElementByTagName`: returns a list of all elements of a given tag name
+* `getElementsByTagName`: returns a list of all elements of a given tag name
   ```javascript
   var tags = document.getElementsByTagName("li");
   ```
@@ -55,4 +55,55 @@
 * `querySelectorAll`" returns all elements that match a given CSS-style selector
   ```javascript
   var li = document.querySelectorAll("li");
+  ```
+
+## Manipulation
+### Manipulate styles
+* Style property
+  ```javascript
+  var tag = document.getElementById("highlight")
+  tag.style.color = "blue";
+  tag.style.border = "10px solid red";
+  tag.style.fontSize = "70px";
+  tag.style.background = "yellow";
+  tag.style.marginTop = "200px";
+  ```
+* Separation of concerns (better than manipulating the styles directly)
+  * Define a CSS class
+    ```css
+    .another-class {
+      color: purple;
+      font-size: 76px;
+    }
+    ```
+  * Toggle it on and off with JS
+    ```javascript
+    var tag = document.querySelector("h1");
+    //add: turns on the style
+    tag.classList.add("another-class");
+    //remove: turns off the style
+    tag.classList.remove("another-class");
+    //toggle: toggle the style
+    tag.classList.toggle("another-class");
+    ```
+
+### Manipulate text and content
+* textContent
+  ```javascript
+  var tag = document.querySelector("p");
+  //extract and alter the text, html tags inside the text will be erased
+  tag.textContent = "blah blah..";
+  ```
+* innerHTML
+  ```javascript
+  var tag = document.querySelector("p");
+  tag.innerHTML //preserve the html tags inside the text
+  ```
+
+### Manipulate attributes
+* getAttribute, setAttribute: read and write attributes like `src` or `href`
+  ```javascript
+  var link = document.querySelector("a");
+  link.getAttribute("href");
+  link.setAttribute("href", "www.dog.com");
   ```
