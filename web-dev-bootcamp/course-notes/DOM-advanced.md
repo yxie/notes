@@ -4,6 +4,7 @@
 * Make things interactive (button, hover, drag/drop, press enter key...)
 * Process: select an element and then add an event **listener**
 * Syntax: `element.addEventListener(type, functionToCall);`
+* Event reference: https://developer.mozilla.org/en-US/docs/Web/Events
 * click
   ```javascript
   var button = document.querySelector("button");
@@ -34,3 +35,5 @@
     h1.style.color = "black";
   });
   ```
+
+## RBG color guessing game
