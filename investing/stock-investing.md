@@ -73,3 +73,35 @@ Large business: board of director <= CEO <= customer
 
 ## Stock
 ### Stock Market
+
+## Risk and rewards
+* Baseline value for risk and reward: `10 year federal note`
+* Risks in investment
+  * Excessive debt
+  * Overpaying for an investment
+  * Not knowing what you are doing
+
+## Inflation
+### Why does the government inflate the money?
+* A moderate amount of inflation protects the country from deep recessions
+* It serves as an indirect form of taxation
+
+### What's the primary cause of inflation?
+* The FED increases the money supply
+* Methods
+  * Print more money
+  * Decrease the bank reserve ratio:
+    `money available in the market = money saved / reserve ratio`
+
+### Impact of inflation
+* Bond: actual bond yield = bond yield - inflation rate
+* Stock: price & earning both increases, no impact in general for stocks without debt
+
+## Bond Credit Rating
+* Moody's, S&P, Fitch
+https://en.wikipedia.org/wiki/Bond_credit_rating
+
+## Yield Curve
+* https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/Historic-Yield-Data-Visualization.aspx
+* Flat/negative curve, high yield (e.g. 5%)=> FED wants to slow down the economy
+* Positive curve, low yield (e.g. 1%) => FED wants to speed up the economy
